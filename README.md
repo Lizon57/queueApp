@@ -2,6 +2,8 @@
 
 This project made as an home-assignment.
 
+![Result preview](https://i.ibb.co/H7XhgFd/Screenshot-1.png)
+
 ## Requirements
 
 - Single pixel-perfect page, mocking people-setting cmp.
