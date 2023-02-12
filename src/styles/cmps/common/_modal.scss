@@ -1,4 +1,4 @@
-.modal-container {
+.common-cmp--modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,7 +13,7 @@
     top: 50%;
     left: 50%;
 
-    border: 1px solid $primary-black;
+    border: 1px solid $modal-border;
     border-radius: $primary-border-radius;
     background-color: #fff;
     padding: 2rem;

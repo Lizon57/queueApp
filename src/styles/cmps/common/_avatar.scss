@@ -1,12 +1,8 @@
-.avatar-container {
+.common-cmp--avatar {
   display: inline-block;
+
   border-radius: 50vw;
-  background: linear-gradient(
-    270deg,
-    #dbd8d8 -235.8%,
-    #cbcbcb -184.24%,
-    #dbd7d7 -135.8%
-  );
+  background: $primary-linear-gray;
   color: $primary-gray;
   margin-inline-end: 14px;
   width: 2.5rem;

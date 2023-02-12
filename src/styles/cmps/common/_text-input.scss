@@ -1,6 +1,10 @@
-.text-input-container {
+.common-cmp--text-input {
   position: relative;
-  flex-basis: 30rem;
+  width: 100%;
+
+  @include viewport-wide-start-from($viewport-large) {
+    width: 30rem;
+  }
 
   .MuiFormControl-root {
     width: 100%;
@@ -15,7 +19,7 @@
 
     input {
       border-radius: $primary-border-radius;
-      letter-spacing: 0.15px;
+      letter-spacing: $primary-letter-spacing;
       padding-inline-start: 2.5rem;
     }
   }

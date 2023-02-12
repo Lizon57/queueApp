@@ -1,13 +1,15 @@
-.people-preview-container {
+.user-setting-cmp--people-preview {
   font-weight: 300;
 
-  td.name {
-    display: flex;
-    align-items: center;
+  @include viewport-wide-start-from($viewport-regular) {
+    &:hover > .actions {
+      opacity: 1;
+    }
   }
 
-  &:hover > .actions {
-    opacity: 1;
+  .name {
+    display: flex;
+    align-items: center;
   }
 
   .name,
@@ -16,8 +18,11 @@
   }
 
   .actions {
-    opacity: 0;
     cursor: pointer;
     color: $primary-gray;
+
+    @include viewport-wide-start-from($viewport-regular) {
+      opacity: 0;
+    }
   }
 }

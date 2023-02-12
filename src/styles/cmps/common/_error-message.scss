@@ -1,9 +1,9 @@
-.error-message-container {
+.common-cmp--error-message {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  line-height: 21px;
+  line-height: $primary-line-height;
 
   .try-again {
     color: $primary-blue;

@@ -21,7 +21,7 @@ export function PeopleList({ isLoading, people, onRemovePeople }: Props) {
 
     return (
         <>
-            <table className="people-list-table-container" cellPadding="30px">
+            <table className="user-setting-cmp--people-list">
                 <thead>
                     <tr>
                         <th>Name</th>

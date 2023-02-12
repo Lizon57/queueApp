@@ -10,7 +10,7 @@ export function RemovePeopleModal({ email, onRemovePeople, onCloseModal }: Props
 
 
     return (
-        <div className="remove-people-modal-container">
+        <div className="user-setting-cmp--remove-people-modal">
             <img src={logo} alt="queue logo" />
             <h2>Are you sure you want to delete this person</h2>
             <p>This action cannot be undone and all data associated with this person will be permanently removed.</p>

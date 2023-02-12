@@ -1,7 +1,7 @@
 import { PeoplePreviewLoader } from "./people-preview-loader"
 
 
-const rows = [1, 2, 3]
+const rows = new Array(3).fill(true)
 
 export function PeopleListLoader() {
     return (

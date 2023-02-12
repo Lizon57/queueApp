@@ -1,7 +1,7 @@
 export function SkeletonLoader({ width }: Props) {
     return (
-        <span className="skeleton-loader" style={{ width: `${width || 5.3}rem` }}>
-        </span>
+        <span className="common-cmp--skeleton-loader" style={{ width: (width || 5.3) + 'rem' }}>
+        </span >
     )
 }
 

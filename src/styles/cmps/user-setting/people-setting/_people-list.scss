@@ -1,9 +1,15 @@
-.people-list-table-container {
+.user-setting-cmp--people-list {
   border-collapse: collapse;
   width: 100%;
 
   tr {
+    display: flex;
+    flex-direction: column;
     border-block-end: 1px solid $secondary-gray;
+
+    @include viewport-wide-start-from($viewport-regular) {
+      display: table;
+    }
 
     &.no-people-found {
       border-block-end: none;
@@ -12,10 +18,43 @@
     }
   }
 
-  thead th {
-    font-weight: 400;
-    line-height: 1.3;
-    letter-spacing: 0.15px;
-    text-align: left;
+  thead {
+    tr {
+      display: table-row;
+    }
+
+    th {
+      display: none;
+
+      font-weight: 400;
+      line-height: $primary-line-height;
+      letter-spacing: $primary-letter-spacing;
+      text-align: left;
+
+      @include viewport-wide-start-from($viewport-regular) {
+        display: table-cell;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      @include viewport-wide-start-from($viewport-regular) {
+        display: table-row;
+      }
+
+      td {
+        padding: 5px 0;
+
+        @include viewport-wide-start-from($viewport-regular) {
+          display: table-cell;
+          padding: 1rem 0;
+        }
+
+        @include viewport-wide-start-from($viewport-large) {
+          padding: 2rem 0;
+        }
+      }
+    }
   }
 }

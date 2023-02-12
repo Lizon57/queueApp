@@ -1,10 +1,10 @@
 export function ErrorMessage({ icon, text, tryAgainAction }: Props) {
     return (
-        <div className="error-message-container">
-            {icon && <span className="icon-wrapper"><img src={icon} alt="error icon" /></span>}
+        <p className="common-cmp--error-message">
+            {icon && <span className="icon-wrapper"><img src={icon} alt="error occured" /></span>}
             <span className="text">{text}</span>
             {tryAgainAction && <span className="try-again" onClick={tryAgainAction}>Try again</span>}
-        </div>
+        </p>
     )
 }
 

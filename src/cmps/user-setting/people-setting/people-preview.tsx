@@ -6,7 +6,7 @@ import { Avatar } from "../../common/avatar"
 export function PeoplePreview({ people, onRemoveAction }: Props) {
     return (
         <>
-            <tr className="people-preview-container">
+            <tr className="user-setting-cmp--people-preview">
                 <td className="name"><Avatar />{people.firstName} {people.lastName}</td>
                 <td>{people.email}</td>
                 <td className="status">{people.status}</td>

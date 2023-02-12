@@ -11,7 +11,7 @@ export function Modal({ children, onCloseModal }: Props) {
 
 
     return (
-        <div className="modal-container">
+        <div className="common-cmp--modal">
             <div className="content-container" ref={elModalContent}>
                 {children}
             </div>

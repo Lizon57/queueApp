@@ -56,7 +56,7 @@ export function PeopleSetting() {
 
 
     return (
-        <div className="people-setting-container">
+        <div className="user-setting-cmp--people-setting">
             <section className="amounts-status-container">
                 <StatusIndicator text="Active" amount={amount?.approved} />
                 <StatusIndicator text="Pending" amount={amount?.pending} className="pending" />
@@ -64,7 +64,7 @@ export function PeopleSetting() {
 
             <section className="search-invite-people-container">
                 <TextInput label="Search members" Icon={CiSearch} onChange={onSetFilter} />
-                <Button Icon={BiPlus} text="Invite people" />
+                <Button Icon={BiPlus} text="Invite people" className="invite-button" />
             </section>
 
             <section className="people-list-container">

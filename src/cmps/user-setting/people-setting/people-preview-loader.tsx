@@ -5,7 +5,7 @@ import { SkeletonLoader } from "../../common/skeleton-loader"
 
 export function PeoplePreviewLoader() {
     return (
-        <tr className="people-preview-loader-container">
+        <tr className="user-setting-cmp--people-preview-loader">
             <td className="name"><Avatar isLoading={true} /><SkeletonLoader width={getRandomInt(3, 8)} /></td>
             <td><SkeletonLoader width={getRandomInt(3, 8)} /></td>
             <td><SkeletonLoader width={getRandomInt(3, 8)} /></td>

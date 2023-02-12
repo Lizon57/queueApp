@@ -9,7 +9,7 @@ export function TextInput({ label, Icon, onChange }: Props) {
 
 
     return (
-        <div className="text-input-container">
+        <div className="common-cmp--text-input">
             <TextField label={label} variant="outlined" onChange={handleChange} />
             {Icon && <span className="icon-wrapper"><Icon /></span>}
         </div>

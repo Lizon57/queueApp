@@ -2,7 +2,7 @@ import { SkeletonLoader } from "../../common/skeleton-loader"
 
 export function StatusIndicator({ amount, text, className }: Props) {
     return (
-        <div className={'status-indicator-container' + (className ? ` ${className}` : '')}>
+        <div className={'user-setting--cmp-status-indicator ' + className}>
             {(!amount && amount !== 0)
                 ? <SkeletonLoader />
                 : <span>{amount}</span>

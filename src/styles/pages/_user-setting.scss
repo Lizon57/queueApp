@@ -1,4 +1,14 @@
 .user-setting-container {
-  display: flex;
-  gap: 3rem;
+  img {
+    display: none;
+  }
+
+  @include viewport-wide-start-from($viewport-large) {
+    display: flex;
+    gap: 3rem;
+
+    img {
+      display: block;
+    }
+  }
 }

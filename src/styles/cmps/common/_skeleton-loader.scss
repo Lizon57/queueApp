@@ -1,11 +1,6 @@
-.skeleton-loader {
+.common-cmp--skeleton-loader {
   display: inline-block;
-  border-radius: 4px;
-  background: linear-gradient(
-    270deg,
-    #dbd8d8 -235.8%,
-    #cbcbcb -184.24%,
-    #dbd7d7 -135.8%
-  );
+  border-radius: $secondary-border-radius;
+  background: $primary-linear-gray;
   height: 1.5rem;
 }

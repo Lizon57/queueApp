@@ -1,9 +1,22 @@
 .app-layout-container {
-  $grid-sides: minmax(6rem, auto);
-
   display: grid;
-  grid-template-columns: $grid-sides 1fr $grid-sides;
-  grid-row-gap: 3rem;
+  grid-template-columns: minmax(10px, auto) 1fr minmax(10px, auto);
+  grid-row-gap: 0.5rem;
+
+  @include viewport-wide-start-from($viewport-regular) {
+    grid-template-columns: minmax(1rem, auto) 1fr minmax(1rem, auto);
+    grid-row-gap: 1rem;
+  }
+
+  @include viewport-wide-start-from($viewport-large) {
+    grid-template-columns: minmax(2rem, auto) 1fr minmax(1rem, 2rem);
+    grid-row-gap: 2rem;
+  }
+
+  @include viewport-wide-start-from($viewport-xLarge) {
+    grid-template-columns: minmax(6rem, auto) 1fr minmax(1rem, 6rem);
+    grid-row-gap: 3rem;
+  }
 
   header {
     grid-row: 1/2;

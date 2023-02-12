@@ -1,6 +1,13 @@
+$modal-border: #00022b;
 $primary-blue: #3a41df;
 $secondary-blue: #262ffc;
 $primary-gray: #9899a7;
 $secondary-gray: #d9d9d9;
 $avatar-gray: #e4e5e7;
-$primary-black: #00022b;
+
+$primary-linear-gray: linear-gradient(
+  270deg,
+  #dbd8d8 -235.8%,
+  #cbcbcb -184.24%,
+  #dbd7d7 -135.8%
+);

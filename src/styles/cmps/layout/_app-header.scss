@@ -1,4 +1,8 @@
 header {
   background-color: $primary-blue;
-  height: 10rem;
+  height: 5rem;
+
+  @include viewport-wide-start-from($viewport-large) {
+    height: 10rem;
+  }
 }
