@@ -1,0 +1,11 @@
+.error-message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  line-height: 21px;
+
+  .try-again {
+    color: $primary-blue;
+  }
+}

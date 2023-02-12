@@ -1,7 +1,10 @@
 .text-input-container {
   position: relative;
+  flex-basis: 30rem;
 
   .MuiFormControl-root {
+    width: 100%;
+
     &:focus-within label {
       padding-inline-start: 0;
     }

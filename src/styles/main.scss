@@ -16,13 +16,15 @@
 @import "./pages/user-setting";
 
 // Cmps
-@import "./cmps/layout/app-header";
 @import "./cmps/common/text-input";
 @import "./cmps/common/button";
 @import "./cmps/common/avatar";
 @import "./cmps/common/skeleton-loader";
+@import "./cmps/common/modal";
+@import "./cmps/layout/app-header";
 @import "./cmps/user-setting/people-setting/people-setting";
 @import "./cmps/user-setting/people-setting/status-indicator";
 @import "./cmps/user-setting/people-setting/people-list";
 @import "./cmps/user-setting/people-setting/people-preview";
 @import "./cmps/user-setting/people-setting/people-preview-loader";
+@import "./cmps/user-setting/people-setting/remove-people-modal";

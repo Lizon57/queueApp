@@ -4,6 +4,12 @@
 
   tr {
     border-block-end: 1px solid $secondary-gray;
+
+    &.no-people-found {
+      border-block-end: none;
+      color: #dcdcdc;
+      text-align: center;
+    }
   }
 
   thead th {
