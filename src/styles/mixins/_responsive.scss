@@ -1,0 +1,35 @@
+@mixin viewport-wide-range($minDeviceWide, $maxDeviceWide) {
+  @media only screen and (max-width: $maxDeviceWide) and (min-width: $minDeviceWide) {
+    @content;
+  }
+}
+
+@mixin viewport-wide-up-to($maxDeviceWide) {
+  @media only screen and (max-width: $maxDeviceWide) {
+    @content;
+  }
+}
+
+@mixin viewport-wide-start-from($minDeviceWide) {
+  @media only screen and (min-width: $minDeviceWide) {
+    @content;
+  }
+}
+
+@mixin viewport-wide-range-exclusive($minDeviceWide, $maxDeviceWide) {
+  @media only screen and (max-width: calc(#{$maxDeviceWide} + 1px)) and (min-width: calc(#{$minDeviceWide} + 1px)) {
+    @content;
+  }
+}
+
+@mixin viewport-wide-up-to-exclusive($maxDeviceWide) {
+  @media only screen and (max-width: calc(#{$maxDeviceWide} + 1px)) {
+    @content;
+  }
+}
+
+@mixin viewport-wide-start-from-exclusive($minDeviceWide) {
+  @media only screen and (min-width: calc(#{$minDeviceWide} + 1px)) {
+    @content;
+  }
+}

@@ -1,0 +1,17 @@
+.app-layout-container {
+  $grid-sides: minmax(6rem, auto);
+
+  display: grid;
+  grid-template-columns: $grid-sides 1fr $grid-sides;
+  grid-row-gap: 3rem;
+
+  header {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+
+  main {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+}

@@ -1,0 +1,29 @@
+.text-input-container {
+  position: relative;
+
+  .MuiFormControl-root {
+    &:focus-within label {
+      padding-inline-start: 0;
+    }
+
+    label {
+      padding-inline-start: 1.5rem;
+    }
+
+    input {
+      border-radius: $primary-border-radius;
+      letter-spacing: 0.15px;
+      padding-inline-start: 2.5rem;
+    }
+  }
+
+  .icon-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    color: $primary-gray;
+    margin-inline-start: 1rem;
+    transform: translateY(-50%);
+  }
+}

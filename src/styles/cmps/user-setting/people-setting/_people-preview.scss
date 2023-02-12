@@ -1,0 +1,22 @@
+.people-preview-container {
+  font-weight: 300;
+
+  td.name {
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover > .actions {
+    opacity: 1;
+  }
+
+  .name,
+  .status {
+    text-transform: capitalize;
+  }
+
+  .actions {
+    opacity: 0;
+    cursor: pointer;
+  }
+}

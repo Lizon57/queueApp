@@ -1,0 +1,19 @@
+.people-setting-container {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .amounts-status-container {
+    display: flex;
+    gap: 8px;
+  }
+
+  .search-invite-people-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-block-end: 1rem;
+  }
+}
