@@ -18,8 +18,8 @@ export function PeopleList({ isLoading, people, onRemovePeople }: Props) {
             {isLoading && <PeopleListLoader />}
 
             {!isLoading && <tbody>
-                {!!people.length && people.map(people => <PeoplePreview
-                    key={people.email}
+                {!!people.length && people.map((people, idx) => <PeoplePreview
+                    key={people.email + idx}
                     people={people}
                     onRemovePeople={onRemovePeople}
                 />)}

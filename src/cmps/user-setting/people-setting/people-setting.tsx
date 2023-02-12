@@ -16,7 +16,7 @@ export function PeopleSetting() {
 
 
     const { isLoading, error, data } = useQuery('repoData', () =>
-        fetch('https://api.github.com/repos/tannerlinsley/react-query')
+        fetch('https://voicetest20202.s3.amazonaws.com/users.json')
             .then(res => res.json())
     )
 
@@ -53,8 +53,7 @@ export function PeopleSetting() {
             <section className="people-list-container">
                 <PeopleList
                     isLoading={isLoading}
-                    people={[{ email: 'JAke@Miller.co', firstName: 'jake', lastName: 'miller', status: 'approved' },
-                    { email: 'PatrickJWashington@fayrep.com', firstName: 'Patrick', lastName: 'Washington', status: 'approved' }]}
+                    people={people || []}
                     onRemovePeople={onRemovePeople}
                 />
             </section>

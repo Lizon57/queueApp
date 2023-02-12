@@ -7,11 +7,14 @@
     #cbcbcb -184.24%,
     #dbd7d7 -135.8%
   );
+  color: $primary-gray;
   margin-inline-end: 14px;
   width: 2.5rem;
   height: 2.5rem;
+  overflow: hidden;
 
   svg {
+    background-color: $avatar-gray;
     width: 100%;
     height: 100%;
   }
